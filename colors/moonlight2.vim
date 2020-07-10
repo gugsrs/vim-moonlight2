@@ -54,15 +54,15 @@ hi Float guifg=#ff995e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Identifier guifg=#ff757f ctermfg=210 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Function guifg=#82aaff ctermfg=111 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Statement guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Conditional guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Conditional guifg=#86e1fc ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Repeat guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Label guifg=#82aaff ctermfg=111 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Operator guifg=#b4f9f8 ctermfg=159 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Keyword guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Exception guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Exception guifg=#86e1fc ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi PreProc guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Include guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Define guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Include guifg=#86e1fc ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi Define guifg=#86e1fc ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Macro guifg=#50c4fa ctermfg=81 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi PreCondit guifg=#c099ff ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Type guifg=#ff995e ctermfg=209 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
@@ -74,6 +74,11 @@ hi SpecialChar guifg=#b4f9f8 ctermfg=159 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi link SpecialComment Comment
 hi Error guifg=#ff757f ctermfg=210 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Todo guifg=#77e0c6 ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi CustomCyan guifg=#86e1fc ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+
+syn keyword pythonCustomCyan return
+
+hi def link pythonCustomCyan CustomCyan
 
 if exists('*term_setansicolors')
   let g:terminal_ansi_colors = repeat([0], 16)
