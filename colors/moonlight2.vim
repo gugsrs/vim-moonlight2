@@ -74,11 +74,6 @@ hi SpecialChar guifg=#b4f9f8 ctermfg=159 guibg=NONE ctermbg=NONE gui=NONE cterm=
 hi link SpecialComment Comment
 hi Error guifg=#ff757f ctermfg=210 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Todo guifg=#77e0c6 ctermfg=116 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi CustomCyan guifg=#86e1fc ctermfg=141 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-
-syn keyword pythonCustomCyan return
-
-hi def link pythonCustomCyan CustomCyan
 
 if exists('*term_setansicolors')
   let g:terminal_ansi_colors = repeat([0], 16)
